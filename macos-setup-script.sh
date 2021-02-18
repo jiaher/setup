@@ -38,6 +38,7 @@ PACKAGES=(
     git
     markdown
     npm
+    nvm
     python
     wget
     tmux
@@ -45,6 +46,8 @@ PACKAGES=(
     docker
     azure-cli
 	pyenv
+	node
+	typescript
 
 )
 echo "Installing packages..."
@@ -82,7 +85,8 @@ CASKS=(
     visual-studio-code
     sublime-text
     sublime-merge
-    pock
+    postgres
+    postman
     )
 echo "Installing cask apps..."
 brew install --cask ${CASKS[@]}
@@ -124,6 +128,19 @@ code --install-extension ms-toolsai.jupyter
 code --install-extension ms-dotnettools.csharp
 code --install-extension ms-vscode.azure-account
 code --install-extension vsciot-vscode.azure-iot-tools
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension christian-kohler.path-intellisense
+code --install-extension esbenp.prettier-vscode
+code --install-extension wallabyjs.wallaby-vscode
+code --install-extension mtxr.sqltools
+code --install-extension waderyan.nodejs-extension-pack
+code --install-extension quicktype.quicktype
+code --install-extension humao.rest-client
+code --install-extension eamodio.gitlens
+code --install-extension 2gua.rainbow-brackets
+code --install-extension wayou.vscode-todo-highlight
+code --install-extension chakrounanas.turbo-console-log
+
 
 # ruby install
 # install latest ruby
