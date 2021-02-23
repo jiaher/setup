@@ -10,6 +10,7 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 
 # Tested on
 - Big Sur
+- Catalina
 
 # Comes with
 ## OS utilities
