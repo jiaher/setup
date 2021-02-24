@@ -72,7 +72,7 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 ### popular third party mac widgets
 
 - numi
-- pectacle
+- spectacle
 - alfred
 - cheatsheet
 - fliqlo
