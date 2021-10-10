@@ -80,12 +80,12 @@ CASKS=(
     cheatsheet
     fliqlo
     anaconda
-    google-drive
-    onedrive
+    ##google-drive
+    ##onedrive
     visual-studio-code
     sublime-text
     sublime-merge
-    postgres
+    ##postgres
     postman
     )
 echo "Installing cask apps..."
