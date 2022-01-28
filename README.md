@@ -66,8 +66,6 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 - slack
 - zoom
 - macdown
-- google-drive
-- onedrive
 
 ### popular third party mac widgets
 
@@ -76,6 +74,7 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 - alfred
 - cheatsheet
 - fliqlo
+- aerial
 
 ### multimedia
 - vlc
