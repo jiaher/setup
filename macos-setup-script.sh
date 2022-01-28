@@ -88,6 +88,7 @@ CASKS=(
     ##postgres
     postman
     syncthing
+    aerial
     )
 echo "Installing cask apps..."
 brew install --cask ${CASKS[@]}
