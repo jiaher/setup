@@ -87,6 +87,7 @@ CASKS=(
     sublime-merge
     ##postgres
     postman
+    syncthing
     )
 echo "Installing cask apps..."
 brew install --cask ${CASKS[@]}
