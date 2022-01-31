@@ -72,6 +72,7 @@ CASKS=(
     aerial
     alfred
     anaconda
+    bitwarden
     cheatsheet
     fliqlo
     google-chrome
