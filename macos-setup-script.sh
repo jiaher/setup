@@ -65,30 +65,35 @@ echo "Installing cask..."
 brew install cask
 
 CASKS=(
-    iterm2
-    slack
-    macdown
-    powershell
-    vlc
-    plex
-    transmission
-    numi
-    microsoft-edge
-    zoom
-    spectacle
+    ##google-drive
+    ##macdown
+    ##onedrive
+    ##postgres
+    aerial
     alfred
+    anaconda
     cheatsheet
     fliqlo
-    anaconda
-    ##google-drive
-    ##onedrive
-    visual-studio-code
-    sublime-text
-    sublime-merge
-    ##postgres
+    google-chrome
+    itsycal
+    iterm2
+    microsoft-edge
+    miro
+    numi
+    philips-hue-sync
+    plex
+    plex-media-server
     postman
+    powershell
+    slack
+    spectacle
+    sublime-merge
+    sublime-text
     syncthing
-    aerial
+    transmission
+    visual-studio-code
+    vlc
+    zoom
     )
 echo "Installing cask apps..."
 brew install --cask ${CASKS[@]}
