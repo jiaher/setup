@@ -74,20 +74,20 @@ CASKS=(
     anaconda
     bitwarden
     cheatsheet
-    fliqlo
+    ##fliqlo
     google-chrome
     itsycal
     iterm2
     microsoft-edge
     miro
     numi
-    philips-hue-sync
+    ##philips-hue-sync
     plex
     plex-media-server
     postman
     powershell
     slack
-    spectacle
+    ##spectacle
     sublime-merge
     sublime-text
     syncthing
