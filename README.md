@@ -28,7 +28,6 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 - azure-cli
 - pyenv
 - nvm
-- postgres
 - node
 - typescript
 
@@ -70,7 +69,7 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 ### popular third party mac widgets
 
 - numi
-- spectacle
+- rectangle
 - alfred
 - cheatsheet
 - fliqlo
