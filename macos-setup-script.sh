@@ -88,6 +88,7 @@ CASKS=(
     powershell
     slack
     ##spectacle
+    rectangle
     sublime-merge
     sublime-text
     syncthing
