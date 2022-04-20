@@ -82,6 +82,7 @@ CASKS=(
     miro
     numi
     ##philips-hue-sync
+    obsidian
     plex
     plex-media-server
     postman
@@ -109,8 +110,8 @@ PYTHON_PACKAGES=(
     pipenv
 )
 
-echo "alias pip=/usr/local/bin/pip3" >> ~/.zshrc
-echo "alias python=/usr/local/bin/python3" >> ~/.zshrc
+echo "alias pip=/opt/homebrew/bin/pip3" >> ~/.zshrc # only for M1 mac
+echo "alias python=/opt/homebrew/bin/python3" >> ~/.zshrc # only for M1 mac
 source ~/.zshrc
 
 pip3 install ${PYTHON_PACKAGES[@]}
