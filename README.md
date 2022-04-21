@@ -11,6 +11,7 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 # Tested on
 - Big Sur
 - Catalina
+- Monterey
 
 # Comes with
 ## OS utilities
@@ -82,3 +83,4 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 
 ### others
 - microsoft-edge
+- obsidian
