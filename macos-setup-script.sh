@@ -71,11 +71,13 @@ CASKS=(
     ##postgres
     aerial
     alfred
+    app-cleaner
     anaconda
     bitwarden
     cheatsheet
     ##fliqlo
     google-chrome
+    hiddenbar
     itsycal
     iterm2
     microsoft-edge
@@ -90,6 +92,7 @@ CASKS=(
     slack
     ##spectacle
     rectangle
+    stats
     sublime-merge
     sublime-text
     syncthing
