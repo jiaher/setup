@@ -75,6 +75,7 @@ CASKS=(
     anaconda
     bitwarden
     cheatsheet
+    cleanmymac
     ##fliqlo
     google-chrome
     hiddenbar
