@@ -73,11 +73,12 @@ CASKS=(
     alfred
     app-cleaner
     anaconda
+    arc # experimental browser
     bitwarden
     cheatsheet
     cleanmymac
     ##fliqlo
-    google-chrome
+    ##google-chrome
     hiddenbar
     itsycal
     iterm2
@@ -94,9 +95,9 @@ CASKS=(
     ##spectacle
     rectangle
     stats
-    sublime-merge
-    sublime-text
-    syncthing
+    ##sublime-merge
+    ##sublime-text
+    ##syncthing
     transmission
     visual-studio-code
     vlc
