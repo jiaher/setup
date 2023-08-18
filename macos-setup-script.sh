@@ -13,6 +13,10 @@ if test ! $(which brew); then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Add prompt to shell
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/joshua.san/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Update homebrew recipes
 brew update
 
@@ -69,8 +73,8 @@ CASKS=(
     ##macdown
     ##onedrive
     ##postgres
-    aerial
-    alfred
+    ##aerial
+    ##alfred
     app-cleaner
     anaconda
     arc # experimental browser
@@ -96,7 +100,7 @@ CASKS=(
     rectangle
     stats
     ##sublime-merge
-    ##sublime-text
+    sublime-text
     ##syncthing
     transmission
     visual-studio-code
