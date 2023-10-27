@@ -73,8 +73,8 @@ Special note: you may be asked to enter your macOS password to execute `sudo` in
 - rectangle
 - alfred
 - cheatsheet
-- fliqlo
-- aerial
+## - fliqlo
+## - aerial
 
 ### multimedia
 - vlc

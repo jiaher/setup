@@ -75,12 +75,12 @@ CASKS=(
     ##postgres
     ##aerial
     ##alfred
-    app-cleaner
+    ##app-cleaner
     anaconda
     arc # experimental browser
     bitwarden
     cheatsheet
-    cleanmymac
+    ##cleanmymac
     ##fliqlo
     ##google-chrome
     hiddenbar
