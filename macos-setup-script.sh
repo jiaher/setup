@@ -40,18 +40,18 @@ brew install bash
 
 PACKAGES=(
     git
-    markdown
+    ##markdown
     npm
     nvm
     python
     wget
     tmux
-    dotnet
-    docker
+    ##dotnet
+    ##docker
     azure-cli
-	pyenv
-	node
-	typescript
+    pyenv
+    node
+    typescript
 
 )
 echo "Installing packages..."
