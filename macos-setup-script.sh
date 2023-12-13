@@ -71,22 +71,32 @@ brew install cask
 CASKS=(
     ##google-drive
     ##macdown
-    ##onedrive
+    onedrive
     ##postgres
+    ##aerial
+    ##alfred
+    ##app-cleaner
     ##aerial
     ##alfred
     ##app-cleaner
     anaconda
     arc # experimental browser
-    bitwarden
+    ##bitwarden
     cheatsheet
+    daisydisk
+    discord
     ##cleanmymac
     ##fliqlo
     ##google-chrome
     hiddenbar
     itsycal
     iterm2
+    ledger-live
+    microsoft-auto-update
     microsoft-edge
+    microsoft-excel
+    microsoft-powerpoint
+    microsoft-word
     miro
     numi
     ##philips-hue-sync
@@ -94,9 +104,10 @@ CASKS=(
     plex
     plex-media-server
     postman
-    powershell
+    ##powershell
     slack
     ##spectacle
+    raycast
     rectangle
     stats
     ##sublime-merge
