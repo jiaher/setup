@@ -92,6 +92,7 @@ CASKS=(
     itsycal
     iterm2
     ledger-live
+    logitech-g-hub
     microsoft-auto-update
     microsoft-edge
     microsoft-excel
