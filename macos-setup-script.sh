@@ -14,7 +14,7 @@ if test ! $(which brew); then
 fi
 
 # Add prompt to shell
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/joshua.san/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Update homebrew recipes
@@ -78,7 +78,6 @@ CASKS=(
     ##app-cleaner
     ##aerial
     ##alfred
-    ##app-cleaner
     anaconda
     arc # experimental browser
     ##bitwarden
@@ -156,20 +155,20 @@ EOF
 
 code --install-extension ms-python.python
 code --install-extension ms-toolsai.jupyter
-code --install-extension ms-dotnettools.csharp
-code --install-extension ms-vscode.azure-account
-code --install-extension vsciot-vscode.azure-iot-tools
+# code --install-extension ms-dotnettools.csharp
+# code --install-extension ms-vscode.azure-account
+# code --install-extension vsciot-vscode.azure-iot-tools
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension christian-kohler.path-intellisense
 code --install-extension esbenp.prettier-vscode
-code --install-extension wallabyjs.wallaby-vscode
-code --install-extension mtxr.sqltools
-code --install-extension waderyan.nodejs-extension-pack
-code --install-extension quicktype.quicktype
+# code --install-extension wallabyjs.wallaby-vscode
+# code --install-extension mtxr.sqltools
+# code --install-extension waderyan.nodejs-extension-pack
+# code --install-extension quicktype.quicktype
 code --install-extension humao.rest-client
-code --install-extension eamodio.gitlens
-code --install-extension 2gua.rainbow-brackets
-code --install-extension wayou.vscode-todo-highlight
+# code --install-extension eamodio.gitlens
+# code --install-extension 2gua.rainbow-brackets
+# code --install-extension wayou.vscode-todo-highlight
 code --install-extension chakrounanas.turbo-console-log
 
 
