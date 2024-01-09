@@ -9,6 +9,8 @@ Use the `macos-setup-script.sh` shell script to install your favourite macOS uti
 Special note: you may be asked to enter your macOS password to execute `sudo` installations, so drink your coffee at your desk!
 
 # Tested on
+- Sonoma
+- Ventura
 - Big Sur
 - Catalina
 - Monterey
