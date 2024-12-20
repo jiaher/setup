@@ -48,7 +48,7 @@ PACKAGES=(
     tmux
     ##dotnet
     ##docker
-    azure-cli
+    ##azure-cli
     pyenv
     node
     typescript
@@ -69,53 +69,41 @@ echo "Installing cask..."
 brew install cask
 
 CASKS=(
-    ##google-drive
-    ##macdown
-    onedrive
-    ##postgres
-    ##aerial
-    ##alfred
-    ##app-cleaner
-    ##aerial
-    ##alfred
+    adobe-acrobat-reader
     anaconda
-    arc # experimental browser
-    ##bitwarden
+    app-cleaner
+    arc
+    canva
+    chatgpt
     cheatsheet
     daisydisk
     discord
-    ##cleanmymac
-    ##fliqlo
-    ##google-chrome
-    hiddenbar
-    itsycal
+    freetube
     iterm2
+    itsycal
     ledger-live
-    logitech-g-hub
     microsoft-auto-update
     microsoft-edge
-    microsoft-excel
-    microsoft-powerpoint
-    microsoft-word
+    microsoft-teams
     miro
+    notion
     numi
-    ##philips-hue-sync
     obsidian
+    onedrive
+    philips-hue-sync
     plex
     plex-media-server
-    postman
-    ##powershell
-    slack
-    ##spectacle
     raycast
     rectangle
+    slack
     stats
-    ##sublime-merge
-    sublime-text
-    ##syncthing
+    telegram
+    tradingview
     transmission
     visual-studio-code
     vlc
+    warp
+    whatsapp
     zoom
     )
 echo "Installing cask apps..."
@@ -140,10 +128,10 @@ pip3 install ${PYTHON_PACKAGES[@]}
 
 # housekeeping
 # set soft link to Sublime
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+#ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 # install Sublime package controller
-wget "https://packagecontrol.io/Package%20Control.sublime-package" -P "~/Library/Application Support/Sublime Text 3/Installed Packages"
+#wget "https://packagecontrol.io/Package%20Control.sublime-package" -P "~/Library/Application Support/Sublime Text 3/Installed Packages"
 
 # set shortcut to VS Code
 cat << EOF >> ~/.bash_profile
@@ -153,23 +141,23 @@ EOF
 
 ## Install VS Code extensions
 
-code --install-extension ms-python.python
-code --install-extension ms-toolsai.jupyter
+#code --install-extension ms-python.python
+#code --install-extension ms-toolsai.jupyter
 # code --install-extension ms-dotnettools.csharp
 # code --install-extension ms-vscode.azure-account
 # code --install-extension vsciot-vscode.azure-iot-tools
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension christian-kohler.path-intellisense
-code --install-extension esbenp.prettier-vscode
+#code --install-extension dbaeumer.vscode-eslint
+#code --install-extension christian-kohler.path-intellisense
+#code --install-extension esbenp.prettier-vscode
 # code --install-extension wallabyjs.wallaby-vscode
 # code --install-extension mtxr.sqltools
 # code --install-extension waderyan.nodejs-extension-pack
 # code --install-extension quicktype.quicktype
-code --install-extension humao.rest-client
+#code --install-extension humao.rest-client
 # code --install-extension eamodio.gitlens
 # code --install-extension 2gua.rainbow-brackets
 # code --install-extension wayou.vscode-todo-highlight
-code --install-extension chakrounanas.turbo-console-log
+#code --install-extension chakrounanas.turbo-console-log
 
 
 # ruby install
@@ -187,4 +175,4 @@ RUBY_GEMS=(
 )
 sudo gem install ${RUBY_GEMS[@]}
 
-echo "Macbook setup completed!"
+echo "Your mac setup is completed!"
