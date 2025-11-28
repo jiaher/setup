@@ -3,13 +3,13 @@ services:
     image: lscr.io/linuxserver/jellyfin:latest
     container_name: jellyfin
     environment:
-      - PUID=3000 # to correspond to TrueNAS permissions
-      - PGID=3000 # to correspond to TrueNAS permissions
-      - TZ=Asia/Singapore
-      - JELLYFIN_PublishedServerUrl=http://10.0.0.101 #optional
+      - PUID=${PUID} # to correspond to TrueNAS permissions
+      - PGID=${PGID} # to correspond to TrueNAS permissions
+      - TZ=${TZ}
+      - JELLYFIN_PublishedServerUrl=http://192.168.79.8 #optional
     volumes:
-      - ./config:/config
-      - /data:/data
+      - /opt/jellyfin/config:/config
+      - /opt/jellyfin/data:/data
       - /mnt/media:/media
     devices:
       - /dev/dri:/dev/dri #Use for Intel QuickSync
@@ -24,41 +24,11 @@ services:
     container_name: jellyseerr
     image: fallenbagel/jellyseerr:latest
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Asia/Singapore
+      - PUID=${PUID} # to correspond to TrueNAS permissions
+      - PGID=${PGID} # to correspond to TrueNAS permissions
+      - TZ=${TZ}
     volumes:
-      - ./jellyseerr:/app/config
+      - /opt/jellyseerr:/app/config
     ports:
       - 5055:5055
     restart: unless-stopped
-
-  jellystat-db:
-    image: postgres:15.2
-    container_name: jellystat-db
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mypassword
-    volumes:
-      - ./jellystat/postgres:/var/lib/postgresql/data
-
-  jellystat:
-    image: cyfershepard/jellystat:latest
-    container_name: jellystat
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_IP: jellystat-db
-      POSTGRES_PORT: 5432
-      JWT_SECRET: "my-secret-jwt-key"
-      TZ: Asia/Singapore
-    volumes:
-      - ./jellystat/backup-data:/app/backend/backup-data
-    ports:
-      - "3000:3000"
-    depends_on:
-      - jellystat-db
-
-# Want more!? https://github.com/awesome-jellyfin/awesome-jellyfin
