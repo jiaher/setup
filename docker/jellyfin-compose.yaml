@@ -6,13 +6,13 @@ services:
       - PUID=${PUID} # to correspond to TrueNAS permissions
       - PGID=${PGID} # to correspond to TrueNAS permissions
       - TZ=${TZ}
-      - JELLYFIN_PublishedServerUrl=http://192.168.79.8 #optional
+      - JELLYFIN_PublishedServerUrl=http://192.168.79.x #optional
     volumes:
       - /opt/jellyfin/config:/config
       - /opt/jellyfin/data:/data
       - /mnt/media:/media
     devices:
-      - /dev/dri:/dev/dri #Use for Intel QuickSync
+      - /dev/dri:/dev/dri #Use for appropriate GPU passthrough
     ports:
       - 8096:8096
       - 7359:7359/udp #Service Discovery
