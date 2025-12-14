@@ -40,19 +40,10 @@ brew install bash
 
 PACKAGES=(
     git
-    ##markdown
     npm
     nvm
-    python
     wget
     tmux
-    ##dotnet
-    ##docker
-    ##azure-cli
-    pyenv
-    node
-    typescript
-
 )
 echo "Installing packages..."
 brew install ${PACKAGES[@]}
@@ -69,19 +60,16 @@ echo "Installing cask..."
 brew install cask
 
 CASKS=(
-    adobe-acrobat-reader
-    anaconda
     app-cleaner
-    arc
     canva
-    chatgpt
-    cheatsheet
     daisydisk
     discord
     freetube
-    iterm2
+    google-chrome
+    google-drive
     itsycal
     ledger-live
+    jellyfin-media-player
     microsoft-auto-update
     microsoft-edge
     microsoft-teams
@@ -92,7 +80,6 @@ CASKS=(
     onedrive
     philips-hue-sync
     plex
-    plex-media-server
     raycast
     rectangle
     slack
@@ -100,8 +87,8 @@ CASKS=(
     telegram
     tradingview
     transmission
+    the-unarchiver
     visual-studio-code
-    vlc
     warp
     whatsapp
     zoom
@@ -109,70 +96,11 @@ CASKS=(
 echo "Installing cask apps..."
 brew install --cask ${CASKS[@]}
 
-
-
-echo "Installing Python packages..."
-PYTHON_PACKAGES=(
-    virtualenv
-    virtualenvwrapper
-    pipenv
-)
-
-echo "alias pip=/opt/homebrew/bin/pip3" >> ~/.zshrc # only for M1 mac
-echo "alias python=/opt/homebrew/bin/python3" >> ~/.zshrc # only for M1 mac
-source ~/.zshrc
-
-pip3 install ${PYTHON_PACKAGES[@]}
-
-
-
-# housekeeping
-# set soft link to Sublime
-#ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-
-# install Sublime package controller
-#wget "https://packagecontrol.io/Package%20Control.sublime-package" -P "~/Library/Application Support/Sublime Text 3/Installed Packages"
-
 # set shortcut to VS Code
 cat << EOF >> ~/.bash_profile
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 EOF
 
-## Install VS Code extensions
-
-#code --install-extension ms-python.python
-#code --install-extension ms-toolsai.jupyter
-# code --install-extension ms-dotnettools.csharp
-# code --install-extension ms-vscode.azure-account
-# code --install-extension vsciot-vscode.azure-iot-tools
-#code --install-extension dbaeumer.vscode-eslint
-#code --install-extension christian-kohler.path-intellisense
-#code --install-extension esbenp.prettier-vscode
-# code --install-extension wallabyjs.wallaby-vscode
-# code --install-extension mtxr.sqltools
-# code --install-extension waderyan.nodejs-extension-pack
-# code --install-extension quicktype.quicktype
-#code --install-extension humao.rest-client
-# code --install-extension eamodio.gitlens
-# code --install-extension 2gua.rainbow-brackets
-# code --install-extension wayou.vscode-todo-highlight
-#code --install-extension chakrounanas.turbo-console-log
-
-
-# ruby install
-# install latest ruby
-brew install ruby
-# echo "Installing Ruby gems"
-RUBY_GEMS=(
-	bundler
-	byebug
-	json
-	middleman
-	middleman-cli
-	rake
-	rspec
-)
-sudo gem install ${RUBY_GEMS[@]}
 
 echo "Your mac setup is completed!"
